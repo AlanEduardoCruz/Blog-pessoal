@@ -31,7 +31,7 @@ public class SwaggerConfig {
                     .email("alan-hd@hotmail.com")))
             .externalDocs(new ExternalDocumentation()
                 .description("Github")
-                .url("https://github.com/conteudoGeneration/"));
+                .url("https://github.com/AlanEduardoCruz"));
     }
 
 
