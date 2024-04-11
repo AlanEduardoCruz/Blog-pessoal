@@ -26,10 +26,10 @@ import com.generation.blogpessoal.service.UsuarioService;
 public class UsuarioControllerTest {
 
 	@Autowired
-	private TestRestTemplate testRestTemplate;
+	private TestRestTemplate testRestTemplate; // simula o insominia para ambiente de teste
 
 	@Autowired
-	private UsuarioService usuarioService;
+	private UsuarioService usuarioService; 
 
 	@Autowired
 	private UsuarioRepository usuarioRepository;
@@ -39,8 +39,7 @@ public class UsuarioControllerTest {
 
 		usuarioRepository.deleteAll();
 
-		usuarioService.cadastrarUsuario(new Usuario(0L, 
-			"Root", "root@root.com", "rootroot", "-"));
+		usuarioService.cadastrarUsuario(new Usuario(0L, "Root", "root@root.com", "rootroot", "-"));
 
 	}
 
